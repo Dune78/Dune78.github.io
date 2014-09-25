@@ -5,3 +5,11 @@ img {
 body {
     background-color: lightblue;
 }
+
+#skyline { 
+    width: 1000px;
+}
+
+h1 {
+    text-align: center;
+}
