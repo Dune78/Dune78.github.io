@@ -13,7 +13,30 @@
     </p>
     <img id="bridge" src="http://cdn.precioyviajes.com/Destinations/105/105/san-francisco-1260661019-L.jpg">
     <img id="skyline" src="http://cdn3.volusion.com/jants.petuy/v/vspfiles/photos/4216-2.jpg?1323080336">
-      
+        
+        <script src="jquery-2.1.0.js"></script>
+        <script>
+            
+        vibrate = function () {
+            $('#bridge').css({
+                'margin-left': 200 * Math.random() - 100
+            });
+        }
+        
+        stop = function () {}
+        
+        $(window).on('click', function (e) {
+            $('#bridge').css({left: e.pageX,
+                            top: e.pageY});
+            $('#bridge').toggleClass('rotated');
+            theFunction = vibrate;
+        });
+        
+        theFunction = stop;
+        setInterval(theFunction, 200);            
+
+            
+        </script>
       
     </body>
 </html>

@@ -5,6 +5,10 @@ img {
 body {
     background-color: lightblue;
 }
+#bridge { 
+    
+    position: absolute;
+}
 
 #skyline { 
     width: 1000px;
@@ -12,4 +16,8 @@ body {
 
 h1 {
     text-align: center;
+}
+
+.rotated {
+    -webkit-transform: rotateY(180deg);
 }
